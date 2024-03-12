@@ -9,3 +9,5 @@ Open on VSCode, click on debug panel and select Services Launch configuration
 * Azure Extensions
 * .NET Service Worker
 * .NET Minimal APIS
+* Entity Framework Core
+* SQLite Database
