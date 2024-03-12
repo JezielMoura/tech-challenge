@@ -1,0 +1,33 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Launch",
+            "command": "dotnet watch",
+            "request": "launch",
+            "type": "node-terminal",
+            "cwd": "${workspaceFolder}/Producer",
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                "ASPNETCORE_URLS": "https://localhost:5000"
+            }
+        },
+        {
+            "name": "Worker Launch",
+            "command": "dotnet watch",
+            "request": "launch",
+            "type": "node-terminal",
+            "cwd": "${workspaceFolder}/Consumer",
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development",
+            }
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Services Launch",
+            "configurations": ["Worker Launch", ".NET Launch"],
+            "stopAll": true
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+POST https://localhost:5000 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Jose da Silva",
+    "address": "Avenida Fernandes Lima, 528 Maceió-Alagoas"
+}
